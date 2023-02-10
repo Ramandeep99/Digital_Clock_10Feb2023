@@ -41,13 +41,14 @@ function showTime() {
     document.getElementById('time3').innerText = s
     document.getElementById('time4').innerText = session
 
+    document.getElementById('left2').innerHTML = liveTime
+
     setTimeout(showTime, 1000);
 }
 
 showTime();
 
 // console.log(liveTime)
-const liveText = document.getElementById('left2').innerHTML = liveTime
 
 
 function convertLocalToGlobal(s) {
