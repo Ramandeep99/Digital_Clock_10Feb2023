@@ -3,6 +3,7 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .grid-container {
@@ -192,11 +193,13 @@ body {
     background-image: url("./Assets/timeline@2x.jpg");
     height: 70px;
     font-size: 30px;
+    color: #3D087B;
 }
 
 .time4 {
-    /* box-sizing: border-box;
-    padding-top: 13px; */
+    box-sizing: border-box;
+    padding-top: 13px;
+    color: white;
     background-image: url("./Assets/AM_svg@2x.jpg");
 }
 
