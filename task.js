@@ -1,11 +1,11 @@
-var liveTime, h, m, s;
+var liveTime, gh, m, s;
 
 function showTime() {
     var date = new Date();
     h = date.getHours(); // 0 - 23
     m = date.getMinutes(); // 0 - 59
     s = date.getSeconds(); // 0 - 59
-
+    gh = h;
     if (h >= 0 && h <= 11) {
         liveTime = 'Good Morning!!';
     } else if (h >= 12 && h <= 17) {
@@ -90,21 +90,25 @@ function majorFunction() {
     lunchEndHrs = convertLocalToGlobal(lunch.substr(7))
     napEndHrs = convertLocalToGlobal(nap.substr(7))
     nightEndHrs = convertLocalToGlobal(night.substr(7))
-
-    if (h >= wakeStHrs && h <= wakeEndHrs) {
+    console.log(wakeStHrs, wakeEndHrs)
+    console.log(lunchStHrs, lunchEndHrs)
+    console.log(napStHrs, napEndHrs)
+    console.log(nightStHrs, nightEndHrs)
+    console.log(gh)
+    if (gh >= wakeStHrs && gh <= wakeEndHrs) {
         // change image and text according to this
         quote.innerHTML = 'Hey! It\'s morning, Wake Up. '
         image.src = './Assets/Component 30 – 1.jpg';
     }
-    if (h >= lunchStHrs && h <= lunchEndHrs) {
+    if (gh >= lunchStHrs && gh <= lunchEndHrs) {
         quote.innerHTML = 'It\'s time to lunch.'
         image.src = './Assets/Component 31 – 1.jpg';
     }
-    if (h >= napStHrs && h <= napEndHrs) {
+    if (gh >= napStHrs && gh <= napEndHrs) {
         quote.innerHTML = 'It\'s nap time. '
         image.src = './Assets/lunch_image@2x.jpg';
     }
-    if (h >= nightStHrs && h <= nightEndHrs) {
+    if (gh >= nightStHrs && gh <= nightEndHrs) {
         quote.innerHTML = 'Good Night!, Have a sound sleep. '
         image.src = './Assets/Component 32 – 1.jpg';
     }

@@ -197,7 +197,7 @@
                 <h2 id="quote">USE DIGI_C FOR MANAGED LIFE</h2>
             </div>
             <div id="right3">
-                <img id="image" src="./Assets/background_initial.jpg" width="550px" height="400px" alt="">
+                <img id="image" src="./Assets/Component 30 – 1.jpg" width="550px" height="400px" alt="">
             </div>
         </div>
     </div>
@@ -206,31 +206,3 @@
 </body>
 
 </html>
-
-<!-- 
-int maxDistance(vector<vector<int>>& grid) {
-    int n;
-    n = grid.size();
-    queue<vector<int>>q;
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
-            if(grid[i][j] == 1){
-                q.push({0,0,0});
-            }
-        }
-    }
-    int dx[4] = {0,0,1,-1};
-    int dy[4] = {1,-1,0,0};
-    int ans=0;
-    while(!q.empty()){
-        int x=q.front()[0] , y=q.front()[1] , dis = q.front()[2]; q.pop();
-        ans = max(ans,dis);
-        for(int i=0;i<4;i++){
-            int kx = dx[i]+x, ky = dy[i]+y;
-            if(kx>=0 && kx<n && ky>=0 && ky<n && grid[kx][ky]!=-1){
-                q.push({kx,ky,dis+1});
-            }
-        }
-    }
-    return ans;
-} -->
